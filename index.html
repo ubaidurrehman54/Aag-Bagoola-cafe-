@@ -1,0 +1,1135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0908">
+  <title>Aag Bagoola | Chai, Boba & Coffee in Husainabad</title>
+  <meta name="description" content="Find your next favorite sip at Aag Bagoola on Madni Masjid Road in Federal B Area, Karachi. Explore boba, iced tea, shakes and coffee.">
+  <meta name="keywords" content="best chai Husainabad, boba tea Karachi, caramel chai, cafe in Husainabad">
+  <meta property="og:title" content="Aag Bagoola | Chai, Boba & Coffee">
+  <meta property="og:description" content="A little fire in every sip. Explore the menu and order your favorites.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #0b0908;
+      --panel: #15110f;
+      --panel-light: #201814;
+      --cream: #f5ebdd;
+      --muted: #b8a99a;
+      --gold: #c9a24b;
+      --ember: #e8590c;
+      --line: rgba(245, 235, 221, .13);
+      --serif: "Playfair Display", Georgia, serif;
+      --sans: "DM Sans", Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 82px; }
+    body {
+      margin: 0;
+      padding-bottom: 104px;
+      background: var(--ink);
+      color: var(--cream);
+      font-family: var(--sans);
+      line-height: 1.55;
+    }
+    body::before {
+      position: fixed;
+      z-index: 5;
+      pointer-events: none;
+      content: "";
+      inset: 0;
+      opacity: .12;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.2'/%3E%3C/svg%3E");
+    }
+    a { color: inherit; text-decoration: none; }
+    a[aria-disabled="true"] { cursor: not-allowed; opacity: .6; pointer-events: none; }
+    button { font: inherit; }
+    .topbar {
+      position: sticky;
+      z-index: 20;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 72px;
+      padding: 0 clamp(20px, 5vw, 76px);
+      border-bottom: 1px solid var(--line);
+      background: rgba(11, 9, 8, .92);
+      backdrop-filter: blur(14px);
+    }
+    .brand { font-family: var(--serif); font-size: 1.35rem; letter-spacing: .04em; }
+    .brand span { color: var(--gold); }
+    .nav-links { display: flex; align-items: center; gap: clamp(18px, 3vw, 42px); color: var(--muted); font-size: .87rem; }
+    .nav-links a:hover, .text-link:hover { color: var(--gold); }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 22px;
+      border: 1px solid var(--gold);
+      border-radius: 3px;
+      background: var(--gold);
+      color: #1b1308;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform .2s, box-shadow .2s, background .2s;
+    }
+    .button:hover { transform: translateY(-2px); box-shadow: 0 0 24px rgba(201, 162, 75, .28); }
+    .button.ghost { background: transparent; color: var(--cream); }
+    .button.small { min-height: 39px; padding: 0 15px; font-size: .85rem; }
+    .hero {
+      position: relative;
+      display: grid;
+      min-height: min(760px, calc(100svh - 72px));
+      place-items: center start;
+      overflow: hidden;
+      padding: 90px clamp(22px, 9vw, 140px);
+      background:
+        linear-gradient(90deg, rgba(11,9,8,.96) 0%, rgba(11,9,8,.76) 47%, rgba(11,9,8,.2) 100%),
+        linear-gradient(0deg, var(--ink), transparent 30%),
+        url("https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=2000&q=85") center 58% / cover;
+    }
+    .hero::after {
+      position: absolute;
+      right: -120px;
+      bottom: -180px;
+      width: 560px;
+      height: 560px;
+      border-radius: 50%;
+      background: rgba(232, 89, 12, .14);
+      filter: blur(90px);
+      content: "";
+    }
+    .hero-copy { position: relative; z-index: 1; max-width: 680px; }
+    .eyebrow { color: var(--gold); font-size: .75rem; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2 { font-family: var(--serif); font-weight: 500; }
+    h1 { margin: 18px 0; font-size: clamp(3rem, 8vw, 6.8rem); line-height: .99; letter-spacing: -.045em; }
+    .hero-copy > p { max-width: 475px; color: #e4d8c9; font-size: clamp(1rem, 2vw, 1.15rem); }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 30px 0 25px; }
+    .trust { color: #dfd0be; font-size: .83rem; }
+    .trust strong { color: var(--gold); }
+    .scroll-cue { margin-top: 48px; color: var(--muted); font-size: .72rem; letter-spacing: .17em; text-transform: uppercase; }
+    .proof {
+      display: flex;
+      justify-content: center;
+      gap: clamp(24px, 7vw, 100px);
+      padding: 22px;
+      border-block: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .88rem;
+      text-align: center;
+    }
+    .proof strong { color: var(--cream); }
+    .section { padding: 100px clamp(20px, 7vw, 110px); }
+    .section-heading { max-width: 650px; margin: 0 auto 44px; text-align: center; }
+    .section-heading h2 { margin: 10px 0; font-size: clamp(2.3rem, 5vw, 4rem); line-height: 1.1; }
+    .section-heading p { color: var(--muted); }
+    .menu-tabs { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; margin-bottom: 28px; }
+    .tab {
+      padding: 10px 17px;
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+    }
+    .tab.active, .tab:hover { border-color: var(--gold); color: var(--gold); }
+    .menu-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 58px 72px; align-items: start; max-width: 1080px; margin: 0 auto; }
+    .menu-category { min-width: 0; padding: 0; }
+    .menu-category h3 { position: relative; margin: 0 0 17px; padding-bottom: 13px; color: var(--gold); font-family: var(--serif); font-size: clamp(1.55rem, 2.2vw, 1.9rem); font-weight: 500; letter-spacing: .13em; line-height: 1.2; text-transform: uppercase; }
+    .menu-category h3::after { position: absolute; bottom: 0; left: 0; width: 48px; height: 1px; background: linear-gradient(90deg, var(--gold), transparent); content: ""; }
+    .menu-list { margin: 0; padding: 0; list-style: none; }
+    .menu-item { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px; align-items: start; padding: 19px 0; border-bottom: 1px solid rgba(245,235,221,.07); transition: opacity .45s ease, transform .45s ease; }
+    .menu-item:last-child { border-bottom-color: transparent; }
+    .menu-item-copy { min-width: 0; }
+    .menu-item-name { display: flex; align-items: baseline; gap: 10px; color: var(--cream); font-size: 1.02rem; font-weight: 600; letter-spacing: .025em; transition: color .18s ease, transform .18s ease; }
+    .menu-item-name::after { flex: 1 1 auto; min-width: 16px; border-bottom: 1px dotted rgba(201,162,75,.42); content: ""; transition: border-color .18s ease; }
+    .menu-item-description { margin: 6px 0 0; color: var(--muted); font-size: .84rem; font-weight: 400; font-style: italic; line-height: 1.55; }
+    .menu-item-actions { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+    .price { color: var(--gold); font-size: .92rem; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .menu-item .button { min-width: 104px; min-height: 44px; padding-inline: 13px; border-color: rgba(201,162,75,.65); border-radius: 999px; background: transparent; color: var(--gold); font-size: .78rem; letter-spacing: .02em; white-space: nowrap; }
+    .menu-item .button:hover { transform: none; background: var(--gold); color: #1b1308; box-shadow: 0 0 18px rgba(201,162,75,.16); }
+    .menu-item .button:focus-visible { outline: 2px solid var(--cream); outline-offset: 3px; }
+    @media (hover: hover) {
+      .menu-item:hover .menu-item-name { transform: translateX(2px); color: var(--gold); }
+      .menu-item:hover .menu-item-name::after { border-color: var(--gold); }
+    }
+    .menu-category.menu-reveal .menu-item { opacity: 0; transform: translateY(10px); }
+    .menu-category.menu-reveal.is-visible .menu-item { opacity: 1; transform: translateY(0); transition-delay: calc(var(--row-index, 0) * 45ms); }
+    .menu-category.menu-reveal.is-visible h3 { animation: menu-heading-in .42s ease both; }
+    @keyframes menu-heading-in { from { opacity: .45; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+    .story { background: linear-gradient(130deg, #20130d, #120e0c 55%, #26170f); }
+    .story-grid { display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: 60px; max-width: 1100px; margin: auto; }
+    .experience-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; max-width: 1120px; margin: auto; }
+    .experience-card { min-height: 220px; padding: 27px; border: 1px solid var(--line); background: linear-gradient(145deg, #241811, #14100e); }
+    .experience-card:nth-child(2) { background: linear-gradient(145deg, #2b1b13, #17110e); }
+    .experience-card:nth-child(3) { background: linear-gradient(145deg, #21170f, #120f0c); }
+    .experience-card span { color: var(--gold); font-size: .72rem; letter-spacing: .15em; text-transform: uppercase; }
+    .experience-card h3 { margin: 35px 0 9px; font-family: var(--serif); font-size: 1.55rem; font-weight: 500; }
+    .experience-card p { margin: 0; color: var(--muted); font-size: .9rem; }
+    .story h2 { margin: 12px 0 18px; font-size: clamp(2.4rem, 5vw, 4rem); line-height: 1.1; }
+    .story p { color: var(--muted); }
+    .story-card { padding: 34px; border: 1px solid rgba(201,162,75,.28); background: rgba(11,9,8,.48); }
+    .story-card strong { display: block; margin-bottom: 9px; color: var(--gold); font-family: var(--serif); font-size: 1.5rem; }
+    .review { max-width: 760px; margin: 0 auto; padding: 28px; border: 1px solid var(--line); background: var(--panel); text-align: center; }
+    .stars { color: var(--gold); letter-spacing: .15em; }
+    .review blockquote { margin: 14px 0; font-family: var(--serif); font-size: clamp(1.25rem, 3vw, 1.8rem); }
+    .review cite { color: var(--muted); font-size: .9rem; font-style: normal; }
+    .review-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; max-width: 1120px; margin: 22px auto 0; }
+    .review-tile { align-self: start; padding: 21px; border: 1px solid var(--line); background: var(--panel); }
+    .review-tile blockquote { margin: 12px 0; color: #e5d9ca; font-family: var(--serif); font-size: 1.08rem; }
+    .review-tile cite { color: var(--muted); font-size: .82rem; font-style: normal; }
+    .review-links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-top: 28px; color: var(--gold); font-size: .9rem; }
+    .order-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; max-width: 1000px; margin: auto; }
+    .step { padding: 26px; border-top: 1px solid var(--gold); background: var(--panel); }
+    .step b { color: var(--gold); font-family: var(--serif); font-size: 2rem; }
+    .step h3 { margin: 14px 0 5px; font-family: var(--serif); font-size: 1.3rem; font-weight: 500; }
+    .step p { margin: 0; color: var(--muted); font-size: .9rem; }
+    .offer { margin: 0 clamp(16px, 6vw, 90px) 80px; padding: 26px; border: 1px solid rgba(201,162,75,.42); background: radial-gradient(ellipse at center, rgba(232,89,12,.18), transparent 70%), #17110e; text-align: center; }
+    .offer p { margin: 0; color: var(--cream); }
+    .what-we-offer { padding-top: 35px; }
+    .offer-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; max-width: 1120px; margin: 0 auto; }
+    .offer-card { padding: 24px; border: 1px solid var(--line); border-radius: 5px; background: var(--panel); transition: transform .2s, border-color .2s; }
+    .offer-card:hover { transform: translateY(-3px); border-color: rgba(201,162,75,.55); }
+    .offer-card.prominent { border-color: rgba(201,162,75,.48); background: linear-gradient(145deg, #251810, #17110e); }
+    .offer-card h3 { margin: 0 0 15px; font-family: var(--serif); font-size: 1.35rem; font-weight: 500; }
+    .offer-card ul { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+    .offer-card li { padding: 6px 11px; border: 1px solid var(--line); border-radius: 99px; color: var(--muted); font-size: .82rem; }
+    .gallery { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; max-width: 1150px; margin: auto; }
+    .gallery img { width: 100%; height: 210px; object-fit: cover; filter: saturate(.75) brightness(.82); transition: transform .3s, filter .3s; }
+    .gallery a { overflow: hidden; border: 1px solid var(--line); background: #201814; }
+    .gallery a:hover img { transform: scale(1.06); filter: saturate(1) brightness(1); }
+    .gallery-link { display: block; margin-top: 22px; color: var(--gold); text-align: center; }
+    .visit { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: stretch; }
+    .visit-card { padding: 32px; border: 1px solid var(--line); background: var(--panel); }
+    .visit-card h2 { font-size: 2.5rem; }
+    .visit-card p { color: var(--muted); }
+    .visit-details { display: grid; gap: 24px; margin: 24px 0; }
+    .visit-details h3 { margin: 0 0 10px; color: var(--cream); font-family: var(--serif); font-size: 1.35rem; font-weight: 500; }
+    .hours-list { width: 100%; border-collapse: collapse; font-size: .9rem; }
+    .hours-list th, .hours-list td { padding: 8px 10px; border-bottom: 1px solid var(--line); text-align: left; }
+    .hours-list th:last-child, .hours-list td:last-child { text-align: right; }
+    .hours-list tr.today { color: var(--gold); font-weight: 700; }
+    .hours-note { margin: 8px 0 0; color: var(--muted); font-size: .8rem; }
+    .price-range { color: var(--cream) !important; font-weight: 600; }
+    .open-status { display: inline-flex; align-items: center; gap: 7px; min-height: 30px; margin: 0 0 12px; padding: 4px 10px; border: 1px solid var(--line); border-radius: 99px; color: var(--muted); font-size: .8rem; font-weight: 700; }
+    .open-status[data-state="open"] { border-color: rgba(78, 190, 119, .4); background: rgba(38, 125, 74, .16); color: #7de2a1; }
+    .open-status[data-state="closed"] { border-color: rgba(184, 169, 154, .3); color: #c4b7aa; }
+    .open-status[hidden] { display: none; }
+    .footer-hours { margin-top: 5px; }
+    .map-placeholder { display: grid; min-height: 280px; place-items: center; border: 1px solid var(--line); background: linear-gradient(135deg, #29201a, #100d0b); color: var(--muted); text-align: center; }
+    footer { display: flex; justify-content: space-between; gap: 20px; padding: 32px clamp(20px, 7vw, 110px); border-top: 1px solid var(--line); color: var(--muted); font-size: .82rem; }
+    footer .brand { color: var(--cream); }
+    .cart-bar {
+      position: fixed;
+      z-index: 40;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px clamp(18px, 5vw, 70px);
+      border-top: 1px solid rgba(201,162,75,.3);
+      background: rgba(21,17,15,.97);
+      box-shadow: 0 -12px 32px rgba(0,0,0,.3);
+    }
+    .cart-bar[hidden] { display: none; }
+    .cart-summary { display: flex; flex-direction: column; }
+    .cart-summary strong { color: var(--cream); }
+    .cart-summary span { color: var(--muted); font-size: .82rem; }
+    .cart-panel {
+      position: fixed;
+      z-index: 60;
+      inset: 0;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+    .cart-panel[hidden], .overlay[hidden] { display: none; }
+    .overlay { position: fixed; z-index: 50; inset: 0; background: rgba(0,0,0,.72); }
+    .cart-sheet {
+      position: relative;
+      z-index: 61;
+      width: min(100%, 620px);
+      max-height: min(90dvh, 820px);
+      overflow-y: auto;
+      padding: 26px clamp(20px, 5vw, 34px) calc(30px + env(safe-area-inset-bottom));
+      border: 1px solid var(--line);
+      border-bottom: 0;
+      border-radius: 14px 14px 0 0;
+      background: #17120f;
+      box-shadow: 0 -20px 70px rgba(0,0,0,.55);
+      animation: rise .24s ease-out;
+    }
+    @keyframes rise { from { transform: translateY(35px); opacity: .4; } to { transform: translateY(0); opacity: 1; } }
+    .sheet-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; }
+    .sheet-head h2 { margin: 0; font-size: 2rem; }
+    .icon-button, .quantity button, .remove {
+      display: inline-grid;
+      width: 40px;
+      height: 40px;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      background: transparent;
+      color: var(--cream);
+      cursor: pointer;
+    }
+    .cart-items { display: grid; gap: 5px; }
+    .cart-row { display: grid; grid-template-columns: 1fr auto auto auto; gap: 12px; align-items: center; padding: 14px 0; border-bottom: 1px solid var(--line); }
+    .cart-product strong { display: block; }
+    .cart-product span { color: var(--muted); font-size: .84rem; }
+    .quantity { display: flex; align-items: center; gap: 8px; }
+    .quantity button { width: 32px; height: 32px; }
+    .remove { width: 34px; height: 34px; color: var(--muted); }
+    .cart-total { display: flex; justify-content: space-between; margin: 20px 0; font-size: 1.15rem; font-weight: 700; }
+    .customer-form { display: grid; gap: 13px; margin-top: 21px; }
+    .customer-form h3 { margin: 0 0 1px; font-family: var(--serif); font-size: 1.35rem; font-weight: 500; }
+    .field { display: grid; gap: 6px; }
+    .field label { color: var(--cream); font-size: .9rem; font-weight: 600; }
+    .field input, .field textarea { width: 100%; min-height: 48px; padding: 11px 13px; border: 1px solid rgba(245,235,221,.22); border-radius: 3px; outline: none; background: #100d0b; color: var(--cream); font: 400 16px/1.45 var(--sans); }
+    .field textarea { min-height: 88px; resize: vertical; }
+    .field input:focus, .field textarea:focus { border-color: var(--gold); box-shadow: 0 0 0 2px rgba(201,162,75,.16); }
+    .field input[aria-invalid="true"], .field textarea[aria-invalid="true"] { border-color: #ff6b6b; }
+    .field-error { min-height: 0; color: #ff8585; font-size: .84rem; }
+    .field-error:empty { display: none; }
+    .place-order { position: sticky; bottom: -1px; width: 100%; min-height: 54px; margin-top: 2px; box-shadow: 0 -8px 14px #17120f; }
+    .place-order:disabled { cursor: not-allowed; opacity: .55; box-shadow: none; }
+    .notice { margin: 10px 0 0; color: #f0c06d; font-size: .85rem; }
+    .mobile-actions { display: none; }
+    .toast {
+      position: fixed;
+      z-index: 80;
+      right: 20px;
+      bottom: 90px;
+      padding: 12px 17px;
+      border: 1px solid rgba(201,162,75,.45);
+      background: var(--panel-light);
+      color: var(--cream);
+      box-shadow: 0 8px 25px #0008;
+      animation: rise .2s ease-out;
+    }
+    .toast[hidden] { display: none; }
+    @media (max-width: 800px) {
+      .nav-links a:not(.button) { display: none; }
+      .menu-grid { grid-template-columns: 1fr; }
+      .story-grid { grid-template-columns: 1fr; gap: 25px; }
+      .experience-grid { grid-template-columns: 1fr; }
+      .review-grid { grid-template-columns: repeat(2, 1fr); }
+      .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .offer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .section { padding-block: 76px; }
+    }
+    @media (max-width: 560px) {
+      body { padding-bottom: 158px; }
+      .topbar { min-height: 64px; padding-inline: 17px; }
+      .nav-links { gap: 8px; }
+      .nav-links .button { min-height: 40px; padding-inline: 13px; font-size: .8rem; }
+      .hero { min-height: 650px; padding-inline: 22px; background-position: 57% center; }
+      h1 { font-size: clamp(3.25rem, 16vw, 5rem); }
+      .proof { gap: 14px; padding: 18px 10px; font-size: .74rem; }
+      .section { padding-inline: 17px; }
+      .menu-grid { gap: 38px; }
+      .menu-item { grid-template-columns: minmax(0, 1fr) auto; gap: 10px; }
+      .menu-item-name { font-size: .96rem; }
+      .menu-item-actions { min-width: 104px; }
+      .menu-item .button { min-height: 44px; padding-inline: 10px; font-size: .75rem; }
+      .product p { min-height: auto; }
+      .order-steps { grid-template-columns: 1fr; }
+      .review-grid { grid-template-columns: 1fr; }
+      .gallery img { height: 155px; }
+      .offer-grid { grid-template-columns: 1fr; gap: 12px; }
+      .visit { grid-template-columns: 1fr; }
+      .visit-card { padding: 24px 18px; }
+      .hours-list th, .hours-list td { padding-inline: 6px; font-size: .82rem; }
+      .offer { margin-inline: 15px; }
+      footer { flex-direction: column; padding-inline: 20px; }
+      .cart-bar { bottom: 64px; padding: 11px 15px; }
+      .cart-panel { bottom: 0; }
+      .cart-sheet { max-height: 94dvh; padding-bottom: calc(24px + env(safe-area-inset-bottom)); }
+      .mobile-actions {
+        position: fixed;
+        z-index: 35;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: grid;
+        grid-template-columns: 1.4fr .8fr .9fr;
+        min-height: 64px;
+        border-top: 1px solid var(--line);
+        background: rgba(11,9,8,.97);
+      }
+      .mobile-actions a { display: grid; place-items: center; color: var(--cream); font-size: .77rem; font-weight: 600; }
+      .mobile-actions a:first-child { background: #123e2d; }
+      body.cart-open .mobile-actions { display: none; }
+      .toast { right: 12px; bottom: 140px; }
+      .cart-row { grid-template-columns: 1fr auto auto; gap: 8px; }
+      .cart-row .remove { grid-column: 3; grid-row: 1; }
+      .quantity { grid-column: 2; grid-row: 1; }
+      .cart-product { grid-column: 1; grid-row: 1; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
+      .menu-category.menu-reveal .menu-item, .menu-category.menu-reveal.is-visible .menu-item { opacity: 1; transform: none; transition-delay: 0ms; }
+    }
+  </style>
+  <script src="config/site.js"></script>
+  <script type="application/ld+json" id="business-schema"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Aag Bagoola home">Aag <span>Bagoola</span></a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#menu">Menu</a><a href="#experience">Our vibe</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a>
+      <a class="button small" href="#menu">Order now</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow">Husainabad · Karachi</div>
+        <h1>Where every<br>sip catches fire.</h1>
+        <p>Chai, boba, coffee and little moments worth slowing down for. Made for Karachi cravings, priced for every day.</p>
+        <div class="actions">
+          <a class="button" href="#menu">Explore the menu</a>
+          <a class="button ghost" href="#visit">Come say salaam</a>
+        </div>
+        <div class="trust"><strong>Warm service. Cozy corners.</strong> Your next favorite sip is closer than you think.</div>
+        <div class="scroll-cue">A little further down ↓</div>
+      </div>
+    </section>
+    <div class="proof" aria-label="Cafe highlights">
+      <span><strong>Lots</strong> to love</span><span><strong>Fresh</strong> little rituals</span><span><strong>Husainabad</strong> made</span>
+    </div>
+
+    <section class="section" id="menu">
+      <div class="section-heading">
+        <div class="eyebrow">Something for your mood</div>
+        <h2>Find your kind of sip.</h2>
+        <p>From fruity popping boba to a proper iced coffee. Add your picks to the cart and send your order on WhatsApp.</p>
+      </div>
+      <div class="menu-tabs" role="group" aria-label="Filter menu">
+        <button class="tab active" type="button" data-filter="all" aria-pressed="true">All sips</button>
+        <button class="tab" type="button" data-filter="tea" aria-pressed="false">Iced tea</button>
+        <button class="tab" type="button" data-filter="slush" aria-pressed="false">Slushes</button>
+        <button class="tab" type="button" data-filter="boba" aria-pressed="false">Boba</button>
+        <button class="tab" type="button" data-filter="coffee" aria-pressed="false">Coffee</button>
+        <button class="tab" type="button" data-filter="shake" aria-pressed="false">Shakes</button>
+      </div>
+      <div class="menu-grid" id="menu-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="section story" id="experience">
+      <div class="section-heading">
+        <div class="eyebrow">A warm little escape</div>
+        <h2>Good taste. Good people. No big spend.</h2>
+        <p>A cozy pause in the middle of Karachi's bustle. Come in for a quick cup, stay for the easy-going atmosphere.</p>
+      </div>
+      <div class="experience-grid">
+        <article class="experience-card"><span>01 · Settle in</span><h3>Aesthetic ambience</h3><p>A cozy corner and a little breather from the bustle outside.</p></article>
+        <article class="experience-card"><span>02 · Feel welcome</span><h3>Warm, easy service</h3><p>Friendly people make every visit feel a little more personal.</p></article>
+        <article class="experience-card"><span>03 · Sip happy</span><h3>Pocket-friendly treats</h3><p>Big flavor, everyday prices. A little affordable luxury for your day.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="section-heading">
+        <div class="eyebrow">Kind words, shared</div>
+        <h2>Good cups bring people back.</h2>
+      </div>
+      <div class="review">
+        <div class="stars" aria-label="Five stars">★★★★★</div>
+        <blockquote>“Such taste in price like that, seriously? All I can say is just wow.”</blockquote>
+        <cite>Asif B. · Customer review</cite>
+      </div>
+      <div class="review-grid">
+        <article class="review-tile"><div class="stars" aria-label="Five stars">★★★★★</div><blockquote>“The only cafe in Husainabad and honestly, it delivers! The mocha hit the spot. A real hidden gem in the area.”</blockquote><cite>Farrukh A. · Google review</cite></article>
+        <article class="review-tile"><div class="stars" aria-label="Five stars">★★★★★</div><blockquote>“Wonderful experience. Aesthetic ambience.”</blockquote><cite>Dua S. · Google review</cite></article>
+        <article class="review-tile"><div class="stars" aria-label="Five stars">★★★★★</div><blockquote>“Humble and friendly staff adds much value on top of their service. Highly recommend for solo visits or with family &amp; friends.”</blockquote><cite>Grappling Drills · Google review</cite></article>
+        <article class="review-tile"><div class="stars" aria-label="Five stars">★★★★★</div><blockquote>“The staff was super cooperative... They even sent tissues, which was a thoughtful touch.”</blockquote><cite>Emaan A. · Delivery review</cite></article>
+        <article class="review-tile"><div class="stars" aria-label="Five stars">★★★★★</div><blockquote>“The classic chai got the same Karachi Pathan chai essence.”</blockquote><cite>Shikeb A. · Google review</cite></article>
+        <article class="review-tile"><div class="stars" aria-label="Five stars">★★★★★</div><blockquote>“I think they have the best boba tea in Karachi.”</blockquote><cite>Abubakr N. · Google review</cite></article>
+        <article class="review-tile"><div class="stars" aria-label="Five stars">★★★★★</div><blockquote>“Really nice and quality flavor teas. Best are Elachi tea and chocolate tea.”</blockquote><cite>Syed Fahad S. · Google review</cite></article>
+        <article class="review-tile"><div class="stars" aria-label="Five stars">★★★★★</div><blockquote>“An economical and affordable place to have something new to sip.”</blockquote><cite>Omair Z. · Google review</cite></article>
+        <article class="review-tile"><div class="stars" aria-label="Five stars">★★★★★</div><blockquote>“Awesome place with splendid taste and pocket friendly.”</blockquote><cite>Mohsin K. · Google review</cite></article>
+      </div>
+      <p style="margin:26px 0 0;color:var(--muted);text-align:center">Join hundreds of happy Karachi sippers.</p>
+      <div class="review-links"><a id="leave-review-link" href="#">Leave us a review</a><a id="all-reviews-link" href="#">See all reviews on Google</a></div>
+    </section>
+
+    <section class="section" id="how-to-order">
+      <div class="section-heading">
+        <div class="eyebrow">Easy as one, two, sip</div>
+        <h2>Your order, your way.</h2>
+      </div>
+      <div class="order-steps">
+        <article class="step"><b>01</b><h3>Pick your sip</h3><p>Add the drinks you're craving to your cart.</p></article>
+        <article class="step"><b>02</b><h3>Send on WhatsApp</h3><p>Check your order, then send it to our team.</p></article>
+        <article class="step"><b>03</b><h3>Make it a moment</h3><p>Enjoy your order. Ask us about dine-in, takeaway or delivery.</p></article>
+      </div>
+    </section>
+
+    <aside class="offer"><p><span class="eyebrow">A little something</span><br><strong>[OFFER]</strong> — Ask us about today's deal.</p></aside>
+
+    <section class="section what-we-offer" id="what-we-offer" aria-labelledby="what-we-offer-title">
+      <div class="section-heading">
+        <div class="eyebrow">A little something for everyone</div>
+        <h2 id="what-we-offer-title">What we offer.</h2>
+      </div>
+      <div class="offer-grid" id="offer-grid"></div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="section-heading">
+        <div class="eyebrow">A little look around</div>
+        <h2>Good sips, good scenes.</h2>
+      </div>
+      <div class="gallery">
+        <a href="#menu"><img loading="lazy" src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&amp;fit=crop&amp;w=650&amp;q=78" alt="Warm cup of coffee in soft cafe light"></a>
+        <a href="#menu"><img loading="lazy" src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&amp;fit=crop&amp;w=650&amp;q=78" alt="Iced coffee served in a clear glass"></a>
+        <a href="#menu"><img loading="lazy" src="https://images.unsplash.com/photo-1558857563-b371033873b8?auto=format&amp;fit=crop&amp;w=650&amp;q=78" alt="Colorful tea and cafe drinks"></a>
+        <a href="#menu"><img loading="lazy" src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&amp;fit=crop&amp;w=650&amp;q=78" alt="Close-up of a freshly prepared cafe drink"></a>
+        <a href="#menu"><img loading="lazy" src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&amp;fit=crop&amp;w=650&amp;q=78" alt="Coffee poured into a cup"></a>
+        <a href="#menu"><img loading="lazy" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&amp;fit=crop&amp;w=650&amp;q=78" alt="Coffee and cafe table detail"></a>
+        <a href="#menu"><img loading="lazy" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&amp;fit=crop&amp;w=650&amp;q=78" alt="A freshly made cup of coffee"></a>
+        <a href="#menu"><img loading="lazy" src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&amp;fit=crop&amp;w=650&amp;q=78" alt="Chilled cafe drink with condensation"></a>
+      </div>
+      <a class="gallery-link" id="gallery-follow" href="#" target="_blank" rel="noopener">Follow us on Instagram →</a>
+    </section>
+
+    <section class="section visit" id="visit">
+      <div class="visit-card">
+        <div class="eyebrow">Find your way here</div>
+        <h2>See you in Husainabad.</h2>
+        <span class="open-status" id="open-status" role="status" aria-live="polite" hidden></span>
+        <p id="address"></p>
+        <div class="visit-details">
+          <div>
+            <h3>Opening Hours</h3>
+            <table class="hours-list">
+              <thead><tr><th scope="col">Day</th><th scope="col">Hours</th></tr></thead>
+              <tbody id="opening-hours"></tbody>
+            </table>
+            <p class="hours-note">Closing times are after midnight (next day).</p>
+          </div>
+          <p class="price-range"><span aria-hidden="true">◉</span> Price range: <span id="price-range"></span></p>
+          <p><strong>Call:</strong> <a id="phone-display" href="#"></a></p>
+        </div>
+        <div class="actions">
+          <a class="button small" id="directions-link" href="#" target="_blank" rel="noopener">Get directions</a>
+          <a class="button small ghost" id="call-link" href="#">Call now</a>
+        </div>
+      </div>
+      <div class="map-placeholder" id="map-box">Map location will appear here<br>once the address is added.</div>
+    </section>
+  </main>
+  <footer>
+    <div><a class="brand" href="#home">Aag <span>Bagoola</span></a><br>Made with ❤️ in Karachi.</div>
+    <div><span id="footer-address"></span><div class="footer-hours" id="footer-hours"></div></div>
+    <div><a id="instagram-link" href="#" target="_blank" rel="noopener">Follow along on Instagram</a></div>
+  </footer>
+
+  <div class="mobile-actions" aria-label="Quick actions">
+    <a href="#menu">Menu</a>
+    <a id="mobile-call" href="#">Call</a>
+    <a id="mobile-directions" href="#" target="_blank" rel="noopener">Directions</a>
+  </div>
+
+  <div class="cart-bar" id="cart-bar" hidden aria-live="polite">
+    <div class="cart-summary"><strong id="cart-count">0 items</strong><span id="bar-total">PKR 0.00</span></div>
+    <button class="button" id="view-cart" type="button">View cart</button>
+  </div>
+  <div class="overlay" id="cart-overlay" hidden></div>
+  <section class="cart-panel" id="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cart-title" hidden>
+    <div class="cart-sheet">
+      <div class="sheet-head"><h2 id="cart-title">Your cart</h2><button class="icon-button" id="close-cart" type="button" aria-label="Close cart">✕</button></div>
+      <div class="cart-items" id="cart-items"></div>
+      <form class="customer-form" id="customer-form" novalidate>
+        <h3>Your details</h3>
+        <div class="field">
+          <label for="customer-name">Full Name <span aria-hidden="true">*</span></label>
+          <input id="customer-name" name="name" type="text" autoComplete="name" required minLength="2" aria-describedby="name-error">
+          <span class="field-error" id="name-error"></span>
+        </div>
+        <div class="field">
+          <label for="customer-phone">Phone Number <span aria-hidden="true">*</span></label>
+          <input id="customer-phone" name="phone" type="tel" inputMode="tel" autoComplete="tel" required aria-describedby="phone-error">
+          <span class="field-error" id="phone-error"></span>
+        </div>
+        <div class="field">
+          <label for="customer-address">Delivery Address <span aria-hidden="true">*</span></label>
+          <textarea id="customer-address" name="address" autoComplete="street-address" required minLength="10" aria-describedby="address-error"></textarea>
+          <span class="field-error" id="address-error"></span>
+        </div>
+        <div class="field">
+          <label for="customer-notes">Order notes <span>(optional)</span></label>
+          <textarea id="customer-notes" name="notes" placeholder="No sugar, extra ice..."></textarea>
+        </div>
+        <div class="cart-total"><span>Total</span><span id="panel-total">PKR 0.00</span></div>
+        <button class="button place-order" id="place-order" type="submit" disabled>Place order on WhatsApp</button>
+      </form>
+      <p class="notice" id="cart-notice" role="status" hidden></p>
+    </div>
+  </section>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script>
+    (() => {
+      "use strict";
+      const WHATSAPP_NUMBER = window.AAG_BAGOOLA_CONFIG.whatsappNumber;
+      const STORAGE_KEY = "aag-bagoola-cart-v1";
+      const CUSTOMER_STORAGE_KEY = "aag-bagoola-customer-v1";
+      const products = [
+        { id: "passion-fruit", name: "Passion Fruit", description: "Iced tea infused with passion fruit and popping boba.", price: 350, category: "tea" },
+        { id: "peach", name: "Peach", description: "Refreshing iced tea with peach flavor and popping boba.", price: 350, category: "tea" },
+        { id: "green-apple", name: "Green Apple", description: "Refreshing iced tea with green apple and popping boba.", price: 350, category: "tea" },
+        { id: "strawberry-slush", name: "Strawberry Slush", description: "A refreshing frozen blend of strawberries and ice.", price: 350, category: "slush" },
+        { id: "mango-slush", name: "Mango Slush", description: "A refreshing frozen blend of mango and ice.", price: 350, category: "slush" },
+        { id: "chocolate-boba", name: "Chocolate", description: "Sweet, creamy chocolate with chewy tapioca pearls.", price: 450, category: "boba" },
+        { id: "vanilla-boba", name: "Vanilla", description: "Smooth vanilla milk tea with chewy tapioca pearls, served chilled.", price: 450, category: "boba" },
+        { id: "coffee-boba", name: "Coffee", description: "Chilled coffee milk tea with soft, chewy tapioca pearls.", price: 450, category: "boba" },
+        { id: "strawberry-boba", name: "Strawberry", description: "Sweet, creamy boba with refreshing strawberry flavor.", price: 450, category: "boba" },
+        { id: "coconut-boba", name: "Coconut", description: "Sweet and creamy with chewy boba.", price: 450, category: "boba" },
+        { id: "iced-mocha", name: "Iced Mocha", description: "Espresso, creamy milk and chocolate, served over ice.", price: 420, category: "coffee" },
+        { id: "iced-latte", name: "Iced Latte", description: "Chilled coffee blended with milk and ice.", price: 350, category: "coffee" },
+        { id: "iced-americano", name: "Iced Americano", description: "A bold, refreshing chilled coffee served over ice.", price: 290, category: "coffee" },
+        { id: "strawberry-shake", name: "Strawberry Shake", description: "Creamy blend of strawberries and milk.", price: 280, category: "shake" },
+        { id: "chocolate-shake", name: "Chocolate Shake", description: "Creamy chocolate blended with ice for a sweet treat.", price: 390, category: "shake" },
+        { id: "mango-shake", name: "Mango Shake", description: "Creamy mango, milk and ice for a refreshing treat.", price: 280, category: "shake" },
+        { id: "brownie-shake", name: "Brownie Shake", description: "Smooth, creamy chocolate shake with brownie in every sip.", price: 420, category: "shake" }
+      ];
+      const cart = loadCart();
+      const menuGrid = document.getElementById("menu-grid");
+      let menuRevealObserver = null;
+      const cartBar = document.getElementById("cart-bar");
+      const cartPanel = document.getElementById("cart-panel");
+      const overlay = document.getElementById("cart-overlay");
+      const notice = document.getElementById("cart-notice");
+      const customerForm = document.getElementById("customer-form");
+      const customerFields = {
+        name: document.getElementById("customer-name"),
+        phone: document.getElementById("customer-phone"),
+        address: document.getElementById("customer-address"),
+        notes: document.getElementById("customer-notes")
+      };
+      let toastTimeout;
+
+      function formatPrice(value) {
+        return `PKR ${Number(value).toLocaleString("en-PK", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+      }
+
+      function loadCart() {
+        try {
+          const parsed = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
+          if (!Array.isArray(parsed)) return [];
+          return parsed.filter(item =>
+            item && typeof item.id === "string" && products.some(product => product.id === item.id) &&
+            Number.isInteger(item.quantity) && item.quantity > 0
+          ).map(item => ({ id: item.id, quantity: item.quantity }));
+        } catch (error) {
+          console.warn("Could not read saved cart; starting with an empty cart.", error);
+          try { localStorage.removeItem(STORAGE_KEY); } catch (storageError) {
+            console.warn("Could not clear invalid saved cart data.", storageError);
+          }
+          return [];
+        }
+      }
+
+      function loadCustomerDetails() {
+        try {
+          const saved = JSON.parse(localStorage.getItem(CUSTOMER_STORAGE_KEY) || "null");
+          if (!saved || typeof saved !== "object" || Array.isArray(saved) ||
+              !["name", "phone", "address"].every(key => typeof saved[key] === "string")) {
+            if (saved !== null) localStorage.removeItem(CUSTOMER_STORAGE_KEY);
+            return;
+          }
+          customerFields.name.value = saved.name;
+          customerFields.phone.value = saved.phone;
+          customerFields.address.value = saved.address;
+        } catch (error) {
+          console.warn("Could not read saved customer details.", error);
+          try { localStorage.removeItem(CUSTOMER_STORAGE_KEY); } catch (storageError) {
+            console.warn("Could not clear invalid saved customer details.", storageError);
+          }
+        }
+      }
+
+      function saveCustomerDetails() {
+        try {
+          localStorage.setItem(CUSTOMER_STORAGE_KEY, JSON.stringify({
+            name: customerFields.name.value.trim(),
+            phone: customerFields.phone.value.trim(),
+            address: customerFields.address.value.trim()
+          }));
+        } catch (error) {
+          console.error("Could not save customer details to localStorage.", error);
+          notice.textContent = "Your details could not be saved on this device.";
+          notice.hidden = false;
+        }
+      }
+
+      function saveCart() {
+        try {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(cart));
+        } catch (error) {
+          console.error("Could not save cart to localStorage.", error);
+          showToast("Cart could not be saved on this device.");
+        }
+      }
+
+      function productRow(product) {
+        const row = document.createElement("li");
+        row.className = "menu-item";
+        const copy = document.createElement("div");
+        copy.className = "menu-item-copy";
+        const name = document.createElement("strong");
+        name.className = "menu-item-name";
+        name.textContent = product.name;
+        const description = document.createElement("p");
+        description.className = "menu-item-description";
+        description.textContent = product.description;
+        copy.append(name, description);
+        const actions = document.createElement("div");
+        actions.className = "menu-item-actions";
+        const price = document.createElement("span");
+        price.className = "price";
+        price.textContent = Number.isFinite(product.price) ? formatPrice(product.price) : "Price to confirm";
+        const button = document.createElement("button");
+        button.className = "button small add-button";
+        button.type = "button";
+        button.textContent = "Add to Cart";
+        button.setAttribute("aria-label", `Add ${product.name} to cart`);
+        button.addEventListener("click", () => addToCart(product.id, button));
+        actions.append(price, button);
+        row.append(copy, actions);
+        return row;
+      }
+
+      function renderMenu(filter = "all") {
+        if (menuRevealObserver) {
+          menuRevealObserver.disconnect();
+          menuRevealObserver = null;
+        }
+        const groups = Array.from(document.querySelectorAll(".tab[data-filter]"))
+          .filter(tab => tab.dataset.filter !== "all")
+          .map(tab => {
+            const category = tab.dataset.filter;
+            const items = products.filter(product => product.category === category);
+            if (!items.length || (filter !== "all" && filter !== category)) return null;
+            const section = document.createElement("section");
+            section.className = "menu-category menu-reveal";
+            const heading = document.createElement("h3");
+            heading.textContent = category.charAt(0).toUpperCase() + category.slice(1);
+            const list = document.createElement("ul");
+            list.className = "menu-list";
+            list.append(...items.map((product, index) => {
+              const row = productRow(product);
+              row.style.setProperty("--row-index", String(index));
+              return row;
+            }));
+            section.append(heading, list);
+            return section;
+          })
+          .filter(Boolean);
+        menuGrid.replaceChildren(...groups);
+        if (!("IntersectionObserver" in window) || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+          groups.forEach(group => group.classList.add("is-visible"));
+          return;
+        }
+        menuRevealObserver = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              menuRevealObserver.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12 });
+        groups.forEach(group => menuRevealObserver.observe(group));
+      }
+
+      function renderWhatWeOffer(groups) {
+        const grid = document.getElementById("offer-grid");
+        if (!Array.isArray(groups)) {
+          console.error("What we offer data must be an array.");
+          return;
+        }
+        grid.replaceChildren(...groups.map((group, index) => {
+          const card = document.createElement("article");
+          card.className = `offer-card${index < 2 ? " prominent" : ""}`;
+          const heading = document.createElement("h3");
+          heading.textContent = group.title;
+          const list = document.createElement("ul");
+          group.items.forEach(item => {
+            const tag = document.createElement("li");
+            tag.textContent = item;
+            list.append(tag);
+          });
+          card.append(heading, list);
+          return card;
+        }));
+      }
+
+      function addToCart(id, button) {
+        const existing = cart.find(item => item.id === id);
+        if (existing) existing.quantity += 1;
+        else cart.push({ id, quantity: 1 });
+        saveCart();
+        renderCart();
+        button.textContent = "Added ✓";
+        window.setTimeout(() => { button.textContent = "Add to Cart"; }, 1000);
+        showToast(`${products.find(product => product.id === id).name} added to cart`);
+      }
+
+      function changeQuantity(id, amount) {
+        const item = cart.find(entry => entry.id === id);
+        if (!item) return;
+        item.quantity += amount;
+        if (item.quantity <= 0) cart.splice(cart.indexOf(item), 1);
+        saveCart();
+        renderCart();
+      }
+
+      function removeItem(id) {
+        const index = cart.findIndex(item => item.id === id);
+        if (index !== -1) cart.splice(index, 1);
+        saveCart();
+        renderCart();
+      }
+
+      function cartTotal() {
+        return cart.reduce((total, item) => {
+          const product = products.find(entry => entry.id === item.id);
+          return total + (product ? product.price * item.quantity : 0);
+        }, 0);
+      }
+
+      function renderCart() {
+        const count = cart.reduce((total, item) => total + item.quantity, 0);
+        const total = cartTotal();
+        cartBar.hidden = count === 0;
+        document.getElementById("place-order").disabled = count === 0;
+        document.getElementById("cart-count").textContent = `${count} ${count === 1 ? "item" : "items"}`;
+        document.getElementById("bar-total").textContent = formatPrice(total);
+        document.getElementById("panel-total").textContent = formatPrice(total);
+        const list = document.getElementById("cart-items");
+        list.replaceChildren();
+        if (!count) {
+          const empty = document.createElement("p");
+          empty.className = "notice";
+          empty.textContent = "Your cart is empty. Find something lovely from the menu.";
+          list.append(empty);
+        }
+        cart.forEach(item => {
+          const product = products.find(entry => entry.id === item.id);
+          if (!product) return;
+          const row = document.createElement("div");
+          row.className = "cart-row";
+          const info = document.createElement("div");
+          info.className = "cart-product";
+          const name = document.createElement("strong");
+          name.textContent = product.name;
+          const linePrice = document.createElement("span");
+          linePrice.textContent = `${formatPrice(product.price)} each · ${formatPrice(product.price * item.quantity)}`;
+          info.append(name, linePrice);
+          const quantity = document.createElement("div");
+          quantity.className = "quantity";
+          const minus = document.createElement("button");
+          minus.type = "button";
+          minus.textContent = "−";
+          minus.setAttribute("aria-label", `Remove one ${product.name}`);
+          minus.addEventListener("click", () => changeQuantity(item.id, -1));
+          const number = document.createElement("span");
+          number.textContent = String(item.quantity);
+          const plus = document.createElement("button");
+          plus.type = "button";
+          plus.textContent = "+";
+          plus.setAttribute("aria-label", `Add one ${product.name}`);
+          plus.addEventListener("click", () => changeQuantity(item.id, 1));
+          quantity.append(minus, number, plus);
+          const remove = document.createElement("button");
+          remove.className = "remove";
+          remove.type = "button";
+          remove.textContent = "✕";
+          remove.setAttribute("aria-label", `Remove ${product.name} from cart`);
+          remove.addEventListener("click", () => removeItem(item.id));
+          row.append(info, quantity, remove);
+          list.append(row);
+        });
+      }
+
+      function showToast(message) {
+        const toast = document.getElementById("toast");
+        toast.textContent = message;
+        toast.hidden = false;
+        window.clearTimeout(toastTimeout);
+        toastTimeout = window.setTimeout(() => { toast.hidden = true; }, 1900);
+      }
+
+      function setCartOpen(open) {
+        cartPanel.hidden = !open;
+        overlay.hidden = !open;
+        document.body.classList.toggle("cart-open", open);
+        if (open) document.getElementById("close-cart").focus();
+      }
+
+      function normalizePhone(value) {
+        const stripped = value.trim().replace(/[\s-]/g, "");
+        const normalized = stripped.startsWith("+923") ? `0${stripped.slice(3)}` : stripped;
+        return /^03\d{9}$/.test(normalized) ? normalized : "";
+      }
+
+      function validateCustomerDetails() {
+        const values = {
+          name: customerFields.name.value.trim(),
+          phone: normalizePhone(customerFields.phone.value),
+          address: customerFields.address.value.trim()
+        };
+        const errors = {
+          name: values.name.length < 2 ? "Enter your name (at least 2 characters)." : "",
+          phone: values.phone ? "" : "Enter a valid Pakistani number (03XXXXXXXXX or +92 3XXXXXXXXX).",
+          address: values.address.length < 10 ? "Enter your delivery address (at least 10 characters)." : ""
+        };
+        const firstInvalid = ["name", "phone", "address"].find(key => errors[key]);
+        ["name", "phone", "address"].forEach(key => {
+          const field = customerFields[key];
+          const error = document.getElementById(`${key}-error`);
+          error.textContent = errors[key];
+          field.setAttribute("aria-invalid", String(Boolean(errors[key])));
+        });
+        if (firstInvalid) {
+          const field = customerFields[firstInvalid];
+          field.scrollIntoView({ behavior: "smooth", block: "center" });
+          field.focus({ preventScroll: true });
+          return null;
+        }
+        customerFields.phone.value = values.phone;
+        return values;
+      }
+
+      function placeOrder(event) {
+        event.preventDefault();
+        if (!cart.length) {
+          notice.textContent = "Your cart is empty. Add an item before placing an order.";
+          notice.hidden = false;
+          return;
+        }
+        const customer = validateCustomerDetails();
+        if (!customer) return;
+        if (!/^\d{10,15}$/.test(WHATSAPP_NUMBER) || WHATSAPP_NUMBER.includes("X")) {
+          notice.textContent = "Set your WhatsApp number in config/site.js before placing orders.";
+          notice.hidden = false;
+          return;
+        }
+        const lines = cart.map((item, index) => {
+          const product = products.find(entry => entry.id === item.id);
+          return `${index + 1}. ${product.name} x${item.quantity} - Rs. ${(product.price * item.quantity).toLocaleString("en-PK")}`;
+        });
+        const notes = customerFields.notes.value.trim();
+        const message = [
+          "Hello, I'd like to place an order:",
+          "",
+          ...lines,
+          "",
+          `Total: Rs. ${cartTotal().toLocaleString("en-PK")}`,
+          "",
+          "Customer Details",
+          `Name: ${customer.name}`,
+          `Phone: ${customer.phone}`,
+          `Address: ${customer.address}`,
+          ...(notes ? [`Notes: ${notes}`] : [])
+        ].join("\n");
+        const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+        saveCustomerDetails();
+        try {
+          window.location.assign(url);
+          cart.splice(0, cart.length);
+          saveCart();
+          renderCart();
+          notice.hidden = true;
+          setCartOpen(false);
+        } catch (error) {
+          console.error("Could not open WhatsApp order link.", error);
+          notice.textContent = "WhatsApp could not be opened. Please try again.";
+          notice.hidden = false;
+        }
+      }
+
+      document.querySelectorAll(".tab").forEach(tab => tab.addEventListener("click", () => {
+        document.querySelectorAll(".tab").forEach(item => {
+          const active = item === tab;
+          item.classList.toggle("active", active);
+          item.setAttribute("aria-pressed", String(active));
+        });
+        renderMenu(tab.dataset.filter);
+      }));
+      document.getElementById("view-cart").addEventListener("click", () => setCartOpen(true));
+      document.getElementById("close-cart").addEventListener("click", () => setCartOpen(false));
+      overlay.addEventListener("click", () => setCartOpen(false));
+      customerForm.addEventListener("submit", placeOrder);
+      Object.entries(customerFields).forEach(([key, field]) => {
+        field.addEventListener("input", () => {
+          if (key !== "notes") saveCustomerDetails();
+          const error = document.getElementById(`${key}-error`);
+          if (error) {
+            error.textContent = "";
+            field.removeAttribute("aria-invalid");
+          }
+        });
+      });
+      document.addEventListener("keydown", event => {
+        if (event.key === "Escape" && !cartPanel.hidden) setCartOpen(false);
+      });
+
+      const config = window.AAG_BAGOOLA_CONFIG;
+      function setExternalLink(id, value) {
+        const link = document.getElementById(id);
+        if (typeof value === "string" && /^https?:\/\//i.test(value)) {
+          link.href = value;
+        } else {
+          link.removeAttribute("href");
+          link.setAttribute("aria-disabled", "true");
+          link.title = "Add the confirmed link in config/site.js";
+        }
+      }
+      function setPhoneLink(id) {
+        const link = document.getElementById(id);
+        const phone = String(config.phone || "").replace(/\D/g, "");
+        if (phone.length >= 7) link.href = `tel:${phone}`;
+        else {
+          link.removeAttribute("href");
+          link.setAttribute("aria-disabled", "true");
+          link.title = "Add the confirmed phone number in config/site.js";
+        }
+      }
+      setPhoneLink("mobile-call");
+      setPhoneLink("call-link");
+      setExternalLink("mobile-directions", config.mapsUrl);
+      setExternalLink("directions-link", config.mapsUrl);
+      setExternalLink("instagram-link", config.instagramUrl);
+      setExternalLink("gallery-follow", config.instagramUrl);
+      setExternalLink("leave-review-link", config.leaveReviewUrl);
+      setExternalLink("all-reviews-link", config.googleReviewsUrl);
+      document.getElementById("address").textContent = config.address;
+      document.getElementById("footer-address").textContent = config.address;
+      document.getElementById("price-range").textContent = config.priceRange;
+      const hoursBody = document.getElementById("opening-hours");
+      hoursBody.replaceChildren(...config.openingHours.map(hours => {
+        const row = document.createElement("tr");
+        row.dataset.day = hours.day;
+        const dayCell = document.createElement("th");
+        dayCell.scope = "row";
+        dayCell.textContent = hours.day;
+        const timeCell = document.createElement("td");
+        timeCell.textContent = hours.label;
+        row.append(dayCell, timeCell);
+        return row;
+      }));
+      const weekdayHours = config.openingHours.slice(0, 6);
+      const saturdayHours = config.openingHours.find(hours => hours.day === "Saturday");
+      const weekdaySummary = weekdayHours.every(hours => hours.label === weekdayHours[0].label)
+        ? `Sun–Fri ${weekdayHours[0].open}–${weekdayHours[0].close}`
+        : weekdayHours.map(hours => `${hours.day.slice(0, 3)} ${hours.open}–${hours.close}`).join(" · ");
+      document.getElementById("footer-hours").textContent =
+        `Hours: ${weekdaySummary} · Sat ${saturdayHours.open}–${saturdayHours.close}`;
+      document.getElementById("phone-display").textContent = config.phone;
+      setPhoneLink("phone-display");
+      document.querySelector(".offer strong").textContent = config.offer;
+      if (typeof config.mapEmbedUrl === "string" && /^https?:\/\//i.test(config.mapEmbedUrl)) {
+        const frame = document.createElement("iframe");
+        frame.title = "Map showing Aag Bagoola";
+        frame.src = config.mapEmbedUrl;
+        frame.loading = "lazy";
+        frame.referrerPolicy = "no-referrer-when-downgrade";
+        frame.style.cssText = "width:100%;min-height:280px;border:0";
+        document.getElementById("map-box").replaceChildren(frame);
+      }
+      const businessSchema = {
+        "@context": "https://schema.org",
+        "@type": "CafeOrCoffeeShop",
+        name: "Aag Bagoola",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: config.address.replace(/, Karachi, Pakistan$/, ""),
+          addressLocality: config.address.split(", ").slice(-2, -1)[0],
+          addressRegion: "Sindh",
+          addressCountry: "PK"
+        },
+        telephone: config.phone,
+        servesCuisine: ["Tea", "Coffee", "Bubble tea"],
+        priceRange: "Rs 1,000-2,000",
+        openingHoursSpecification: config.openingHours.map(hours => ({
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: `https://schema.org/${hours.day}`,
+          opens: `${String(hours.openHour).padStart(2, "0")}:00`,
+          closes: `${String(hours.closeHour).padStart(2, "0")}:00`
+        })),
+        hasMenu: {
+          "@type": "Menu",
+          hasMenuSection: [...new Set(products.map(product => product.category))].map(category => ({
+            "@type": "MenuSection",
+            name: category,
+            hasMenuItem: products.filter(product => product.category === category).map(product => ({
+              "@type": "MenuItem",
+              name: product.name,
+              offers: { "@type": "Offer", price: product.price, priceCurrency: "PKR" }
+            }))
+          }))
+        }
+      };
+      function updateOpenStatus() {
+        const parts = new Intl.DateTimeFormat("en-US", {
+          timeZone: "Asia/Karachi",
+          weekday: "long",
+          hour: "2-digit",
+          minute: "2-digit",
+          hourCycle: "h23"
+        }).formatToParts(new Date());
+        const values = Object.fromEntries(parts.map(part => [part.type, part.value]));
+        const todayIndex = config.openingHours.findIndex(hours => hours.day === values.weekday);
+        if (todayIndex < 0) {
+          console.error(`Opening hours are missing for ${values.weekday}.`);
+          return;
+        }
+        const todayHours = config.openingHours[todayIndex];
+        const currentMinutes = Number(values.hour) * 60 + Number(values.minute);
+        const openingMinutes = todayHours.openHour * 60;
+        const previousHours = config.openingHours[(todayIndex + 6) % config.openingHours.length];
+        const isOpen = currentMinutes >= openingMinutes || currentMinutes < previousHours.closeHour * 60;
+        const badge = document.getElementById("open-status");
+        badge.dataset.state = isOpen ? "open" : "closed";
+        badge.textContent = isOpen ? "Open now" : `Closed - opens at ${todayHours.open}`;
+        badge.hidden = false;
+        hoursBody.querySelectorAll("tr").forEach(row => {
+          row.classList.toggle("today", row.dataset.day === values.weekday);
+          if (row.dataset.day === values.weekday) row.setAttribute("aria-current", "date");
+          else row.removeAttribute("aria-current");
+        });
+      }
+      updateOpenStatus();
+      window.setInterval(updateOpenStatus, 60_000);
+      if (Number.isFinite(config.rating) && config.rating > 0 && config.rating <= 5 &&
+          Number.isInteger(config.reviewCount) && config.reviewCount > 0) {
+        businessSchema.aggregateRating = {
+          "@type": "AggregateRating",
+          ratingValue: config.rating,
+          reviewCount: config.reviewCount
+        };
+      }
+      document.getElementById("business-schema").textContent = JSON.stringify(businessSchema);
+      renderWhatWeOffer(config.whatWeOffer);
+      renderMenu();
+      renderCart();
+      loadCustomerDetails();
+    })();
+  </script>
+</body>
+</html>
